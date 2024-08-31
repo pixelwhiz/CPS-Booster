@@ -1,6 +1,6 @@
 ﻿namespace CPS_Booster.ViewModels;
 
-public partial class MainWindowViewModel : ViewModelBase
+public partial class CpsBoosterViewModel : ViewModelBase
 {
 #pragma warning disable CA1822 // Mark members as static
     public string Greeting => "Welcome to Avalonia!";
