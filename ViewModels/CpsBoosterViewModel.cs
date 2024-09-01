@@ -17,7 +17,7 @@ namespace CPS_Booster.ViewModels
             private set => SetProperty(ref _cps, value);
         }
 
-        public string CPSDisplay => $"{_clickCount:F1} CPS";
+        public string CPSDisplay => $"{CPS:F1} CPS";
 
         public CpsBoosterViewModel()
         {
@@ -25,12 +25,10 @@ namespace CPS_Booster.ViewModels
             _timer.Elapsed += OnTimerElapsed;
             _timer.Start();
         }
-
-        // Method to be called on every button click
+        
         public void RegisterClick()
         {
             _clickCount++;
-            Console.WriteLine($"Click registered. Total clicks: {_clickCount}");
             OnPropertyChanged(nameof(CPSDisplay));
         }
         

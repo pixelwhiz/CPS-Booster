@@ -9,8 +9,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Models\" />
 		<AvaloniaResource Include="Assets\**" />
+		<Folder Include="Models\" />
 		<Folder Include="NativeLibs\" />
 	</ItemGroup>
 	
@@ -23,9 +23,5 @@
 		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
 		<PackageReference Include="FluentIcons.Avalonia" Version="1.1.255" />
-	</ItemGroup>
-	
-	<ItemGroup>
-	  <AdditionalFiles Include="Views\WindowTemplates.axaml" />
 	</ItemGroup>
 </Project>
