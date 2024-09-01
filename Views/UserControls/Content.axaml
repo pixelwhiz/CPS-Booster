@@ -3,7 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="CPS_Booster.Views.UserControls.Content">
+             x:Class="CPS_Booster.Views.UserControls.Content"
+             xmlns:viewModels="clr-namespace:CPS_Booster.ViewModels"
+             x:DataType="viewModels:CpsBoosterViewModel"
+             >
     
     <DockPanel Margin="10">
         <Grid Margin="0, 0, 0, 0">
@@ -151,7 +154,8 @@
                     <TabItem FontSize="15" FontFamily="{StaticResource PoppinsBlack}" FontWeight="Medium" Header="Click Tester">
                         <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
                             <Button 
-                                Content="0 CPS" 
+                                x:Name="ClickTesterButton"
+                                Content="{Binding CPSDisplay, Mode=OneWay}"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 VerticalContentAlignment="Center"
@@ -165,17 +169,17 @@
                                 Foreground="LightGray"
                                 BorderBrush="Transparent"
                                 BorderThickness="1"
-                                CornerRadius="10">
-                                
+                                CornerRadius="10"
+                                Click="ClickTesterButton_Click">
                                 <Button.Styles>
                                     <Style Selector="Button:pointerover /template/ ContentPresenter">
                                         <Setter Property="Background" Value="#686464"></Setter>
                                     </Style>
                                 </Button.Styles>
-                                
                             </Button>
                         </StackPanel>
                     </TabItem>
+                    
                 </TabControl>
             </StackPanel>
 
