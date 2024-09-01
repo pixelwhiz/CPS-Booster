@@ -459,8 +459,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/daffa/dev/CPS Booster/cmake-build-debug",
-		"source" : "D:/daffa/dev/CPS Booster"
+		"build" : "D:/daffa/dev/CPS-Booster/cmake-build-debug",
+		"source" : "D:/daffa/dev/CPS-Booster"
 	},
 	"version" : 
 	{

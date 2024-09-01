@@ -1,0 +1,184 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CPS_Booster.Views.UserControls.Content">
+    
+    <DockPanel Margin="10">
+        <Grid Margin="0, 0, 0, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Header Section -->
+            <StackPanel Grid.Row="0" Margin="0, 0, 0, 25" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Image Source="../../Assets/cpsbooster-logo.png" Width="75" Height="75" />
+                <TextBlock Margin="10, 0, 0, 0" TextAlignment="Center" FontFamily="{StaticResource PoppinsExtraLight}" Text="Boost your CPS!" Foreground="LightGray" VerticalAlignment="Center" FontSize="35"/>
+            </StackPanel>
+            
+            <!-- CPS Setting -->
+            <StackPanel Grid.Row="1" Margin="25, 0">
+                <TextBlock Foreground="LightGray" Margin="0 5" FontFamily="{StaticResource PoppinsBlack}" FontWeight="Medium" FontSize="15">Click Per Seconds (CPS)</TextBlock>
+                <NumericUpDown Value="10" 
+                               Minimum="0" 
+                               Maximum="100" 
+                               Increment="1"
+                               FormatString="F0"
+                               Foreground="LightGray"
+                               Background="#686464"
+                               BorderThickness="0"
+                               BorderBrush="Transparent"
+                               CornerRadius="10"
+                               IsReadOnly="False">
+                    <NumericUpDown.Styles>
+                        <Style Selector="NumericUpDown/template/Border">
+                            <Setter Property="Background" Value="Black"></Setter>
+                        </Style>
+                    </NumericUpDown.Styles>
+                </NumericUpDown>
+            </StackPanel>
+            
+            <!-- Mouse Button Selection -->
+            <StackPanel Margin="25, 25, 25, 0" Grid.Row="2" VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" Margin="0, 0, 0, 5" FontSize="15" FontFamily="{StaticResource PoppinsBlack}" FontWeight="Medium" Foreground="LightGray" Text="Mouse Button to Click"/>
+    
+                <Grid HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+        
+                    <CheckBox Grid.Column="0" Margin="10" Foreground="LightGray" IsChecked="True">Left Click</CheckBox>
+                    <CheckBox Grid.Column="1" Margin="10" Foreground="LightGray" IsChecked="False">Middle Click</CheckBox>
+                    <CheckBox Grid.Column="2" Margin="10" Foreground="LightGray" IsChecked="False">Right Click</CheckBox>
+                </Grid>
+            </StackPanel>
+            
+            <!-- Buttons Section -->
+            <Grid Grid.Row="3" Margin="0, 25, 0, 0" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Foreground="LightGray" 
+                            HorizontalContentAlignment="Center" 
+                            VerticalContentAlignment="Center" 
+                            FontSize="25"
+                            FontWeight="Medium"
+                            Background="#1abc9c" 
+                            FontFamily="{StaticResource PoppinsExtraBold}" 
+                            Height="50" 
+                            Width="125"
+                            BorderBrush="White"
+                            BorderThickness="0"
+                            CornerRadius="15"
+                            Cursor="Hand">
+                        <Button.Styles>
+                            <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#1abc9c"/>
+                                <Setter Property="BoxShadow" Value="1 0 2 2 #48c9b0"/>
+                            </Style>
+                        </Button.Styles>
+                        <TextBlock>
+                            <Border CornerRadius="20" Height="30" Width="30" Background="Black">
+                                <PathIcon Data="{StaticResource PlayRegular}" Margin="2.5, -1, 0, 0" Height="10" Width="10"/>
+                            </Border>
+                            Start
+                        </TextBlock>
+                    </Button>
+                    
+                    <Button Foreground="LightGray" 
+                            HorizontalContentAlignment="Center" 
+                            VerticalContentAlignment="Center" 
+                            FontSize="25" 
+                            Background="#c0392b" 
+                            FontFamily="{StaticResource PoppinsExtraBold}" 
+                            Height="50" 
+                            Width="125"
+                            FontWeight="Medium"
+                            BorderBrush="White"
+                            BorderThickness="0"
+                            CornerRadius="15"
+                            Cursor="Hand"
+                            Margin="10, 0, 0, 0">
+                        <Button.Styles>
+                            <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#c0392b"/>
+                                <Setter Property="BoxShadow" Value="1 0 2 2 #cd6155"/>
+                            </Style>
+                        </Button.Styles>
+                        <TextBlock>
+                            <Border CornerRadius="20" Height="30" Width="30" Background="Black">
+                                <PathIcon Data="{StaticResource StopRegular}" Margin="1, -2, 0, 0" Height="10" Width="10"/>
+                            </Border>
+                            Stop
+                        </TextBlock>
+                    </Button>
+                </StackPanel>
+            </Grid>
+            
+            <!-- Tabs Section -->
+            <StackPanel Margin="5, 0, 5, 0" Grid.Row="4">
+                <TabControl Margin="5">
+                    <!-- Tab 1: Console -->
+                    <TabItem FontSize="15" FontFamily="{StaticResource PoppinsBlack}" FontWeight="Medium" Header="Console">
+                        <TextBox 
+                            Name="ConsoleTextBox"
+                            Margin="5"
+                            IsReadOnly="True"
+                            MaxHeight="150"
+                            AcceptsReturn="True"
+                            TextWrapping="Wrap" 
+                            Background="#686464"
+                            Foreground="LightGray"
+                            BorderThickness="0"
+                            CornerRadius="10"
+                            FontFamily="Courier New"
+                            FontSize="12">
+                            <TextBox.Styles>
+                                <Style Selector="TextBox/template/Border">
+                                    <Setter Property="Background" Value="#686464"></Setter>
+                                    <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                                </Style>
+                            </TextBox.Styles>
+                        </TextBox>
+                    </TabItem>
+        
+                    <!-- Tab 2: Click Tester -->
+                    <TabItem FontSize="15" FontFamily="{StaticResource PoppinsBlack}" FontWeight="Medium" Header="Click Tester">
+                        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                            <Button 
+                                Content="0 CPS" 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                Height="125"
+                                Width="400"
+                                Margin="5"
+                                FontSize="15"
+                                FontFamily="{StaticResource PoppinsBlack}"
+                                Background="#686464"
+                                Foreground="LightGray"
+                                BorderBrush="Transparent"
+                                BorderThickness="1"
+                                CornerRadius="10">
+                                
+                                <Button.Styles>
+                                    <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                        <Setter Property="Background" Value="#686464"></Setter>
+                                    </Style>
+                                </Button.Styles>
+                                
+                            </Button>
+                        </StackPanel>
+                    </TabItem>
+                </TabControl>
+            </StackPanel>
+
+        </Grid>
+    </DockPanel>
+</UserControl>

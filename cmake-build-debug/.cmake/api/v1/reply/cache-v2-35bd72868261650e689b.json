@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/daffa/dev/CPS Booster/cmake-build-debug"
+			"value" : "d:/daffa/dev/CPS-Booster/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/daffa/dev/CPS Booster/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/daffa/dev/CPS-Booster/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/daffa/dev/CPS Booster"
+			"value" : "D:/daffa/dev/CPS-Booster"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/daffa/dev/CPS Booster/cmake-build-debug"
+			"value" : "D:/daffa/dev/CPS-Booster/cmake-build-debug"
 		},
 		{
 			"name" : "CPS_Booster_IS_TOP_LEVEL",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/daffa/dev/CPS Booster"
+			"value" : "D:/daffa/dev/CPS-Booster"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

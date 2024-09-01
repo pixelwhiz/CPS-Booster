@@ -1,0 +1,61 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <Style>
+        <Style.Resources>
+            <FontFamily x:Key="PoppinsBlack">
+                avares://CPS Booster/Assets/Fonts/Poppins-Black.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsBlackItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-BlackItalic.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsBold">
+                avares://CPS Booster/Assets/Fonts/Poppins-Bold.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsBoldItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-BoldItalic.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsExtraBold">
+                avares://CPS Booster/Assets/Fonts/Poppins-ExtraBold.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsExtraBoldItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-ExtraBoldItalic.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsExtraLight">
+                avares://CPS Booster/Assets/Fonts/ExtraLight.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsExtraLightItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-ExtraLightItalic.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-Italic.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsLightItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-LightItalic.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsMedium">
+                avares://CPS Booster/Assets/Fonts/Poppins-Medium.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsMediumItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-MediumItalic.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsRegular">
+                avares://CPS Booster/Assets/Fonts/Poppins-Regular.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsSemibBold">
+                avares://CPS Booster/Assets/Fonts/Poppins-SemiBold.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsThin">
+                avares://CPS Booster/Assets/Fonts/Poppins-Thin.ttf
+            </FontFamily>
+            <FontFamily x:Key="PoppinsThinItalic">
+                avares://CPS Booster/Assets/Fonts/Poppins-ThinItalic.ttf
+            </FontFamily>
+        </Style.Resources>
+    </Style>
+</Styles>

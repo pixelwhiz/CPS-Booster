@@ -3,18 +3,32 @@
         xmlns:vm="using:CPS_Booster.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="470"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaToDecorationsHint="True"
+        xmlns:fi="clr-namespace:FluentIcons.Avalonia;assembly=FluentIcons.Avalonia"
         x:Class="CPS_Booster.Views.CpsBooster"
         x:DataType="vm:CpsBoosterViewModel"
+        xmlns:usercontrols="using:CPS_Booster.Views.UserControls"
         Icon="/Assets/cpsbooster-logo.ico"
-        Title="CPS_Booster">
+        Title="CPS Booster"
+        Width="470"
+        Height="600"
+        CanResize="False">
 
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:CpsBoosterViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    
+    <Grid Background="#444444">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <usercontrols:Heading Grid.Row="0"/>
+        <usercontrols:Content Grid.Row="1"/>
+        <!-- <TextBlock Text="Main Content" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"/> -->
+    </Grid>
 </Window>

@@ -11,5 +11,8 @@
   
     <Application.Styles>
         <FluentTheme />
+        <StyleInclude Source="avares://CPS Booster/Styles/Fonts.axaml"></StyleInclude>
+        <StyleInclude Source="avares://CPS Booster/Styles/Icons.axaml"></StyleInclude>
+        <StyleInclude Source="avares://CPS Booster/Styles/Styles.axaml"></StyleInclude>
     </Application.Styles>
 </Application>
