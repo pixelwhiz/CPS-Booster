@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="App.axaml" value="CPS Booster.csproj" />
+        <entry key="Views/CpsBooster.axaml" value="CPS Booster.csproj" />
+        <entry key="Views/UserControls/Content.axaml" value="CPS Booster.csproj" />
+        <entry key="Views/UserControls/Heading.axaml" value="CPS Booster.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

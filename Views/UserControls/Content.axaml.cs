@@ -1,3 +1,5 @@
+using System;
+using System.Runtime.InteropServices;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using CPS_Booster.ViewModels;
@@ -12,13 +14,25 @@ namespace CPS_Booster.Views.UserControls
             DataContext = new CpsBoosterViewModel();
         }
 
+        [DllImport("core.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void start(int cps, bool leftClick, bool middleClick, bool rightClick);
 
-        private void ClickTesterButton_Click(object sender, RoutedEventArgs e)
+        [DllImport("core.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void stop();
+        
+        private void starts(object sender, RoutedEventArgs e)
         {
-            if (DataContext is CpsBoosterViewModel viewModel)
-            {
-                viewModel.RegisterClick();
-            }
+            int cps = (int)(numericUpDown.Value ?? 0);
+            bool leftClick = leftClickCheckBox.IsChecked ?? false;
+            bool middleClick = rightClickCheckBox.IsChecked ?? false;
+            bool rightClick = rightClickCheckBox.IsChecked ?? false;
+            
+            start(cps, leftClick, middleClick, rightClick);
+        }
+
+        private void stops(object sender, RoutedEventArgs e)
+        {
+            stop();
         }
     }
 }

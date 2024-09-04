@@ -1,7 +1,5 @@
-﻿using System;
-using System.ComponentModel;
-using System.Timers;
-using CommunityToolkit.Mvvm.ComponentModel; // Assuming you are using CommunityToolkit.Mvvm
+﻿using System.Timers;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace CPS_Booster.ViewModels
 {

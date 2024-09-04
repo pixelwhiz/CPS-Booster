@@ -4,4 +4,5 @@ namespace CPS_Booster.ViewModels;
 
 public class ViewModelBase : ObservableObject
 {
+    
 }
