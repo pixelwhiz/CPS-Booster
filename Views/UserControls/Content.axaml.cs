@@ -8,6 +8,9 @@ namespace CPS_Booster.Views.UserControls
 {
     public partial class Content : UserControl
     {
+
+        public bool isSimulateStarting = false;
+        
         public Content()
         {
             InitializeComponent();
@@ -28,11 +31,15 @@ namespace CPS_Booster.Views.UserControls
             bool rightClick = rightClickCheckBox.IsChecked ?? false;
             
             start(cps, leftClick, middleClick, rightClick);
+            stopButton.IsVisible = true;
+            startButton.IsVisible = false;
         }
 
         private void stops(object sender, RoutedEventArgs e)
         {
             stop();
+            stopButton.IsVisible = false;
+            startButton.IsVisible = true;
         }
     }
 }

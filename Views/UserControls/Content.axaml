@@ -99,6 +99,7 @@
                             FontSize="25"
                             x:Name="stopButton"
                             Click="stops"
+                            IsVisible="false"
                             Background="#c0392b" 
                             FontFamily="{StaticResource PoppinsExtraBold}" 
                             Height="50" 

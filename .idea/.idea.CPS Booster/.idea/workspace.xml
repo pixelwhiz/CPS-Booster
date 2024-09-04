@@ -8,24 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b46cb3-d1c2-423b-8fee-579526e61d7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/avalonia.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CPS-Booster.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/CpsBoosterViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/CpsBoosterViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/ViewModelBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/ViewModelBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPS Booster.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CPS Booster.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/UserControls/Content.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UserControls/Content.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/UserControls/Content.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UserControls/Content.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPS_Booster.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPS_Booster.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPS_Booster.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPS_Booster.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +21,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4ea6e1e014844945f95328fe189dc13548cd6511aa2d628c312a4b0bda1d1/Rect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/App.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ViewLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ViewModels/CpsBoosterViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/UserControls/Content.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/UserControls/Content.axaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/UserControls/Heading.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/UserControls/Heading.axaml.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -117,7 +115,7 @@
       <workItem from="1725459398051" duration="80000" />
       <workItem from="1725459612777" duration="29000" />
       <workItem from="1725459755756" duration="536000" />
-      <workItem from="1725460317680" duration="2161000" />
+      <workItem from="1725460317680" duration="6685000" />
     </task>
     <servers />
   </component>
