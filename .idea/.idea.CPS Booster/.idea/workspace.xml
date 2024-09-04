@@ -10,9 +10,6 @@
     <list default="true" id="d4b46cb3-d1c2-423b-8fee-579526e61d7d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CPS Booster/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPS Booster.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CPS Booster.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/UserControls/Content.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UserControls/Content.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/UserControls/Content.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UserControls/Content.axaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,7 @@
       <workItem from="1725459398051" duration="80000" />
       <workItem from="1725459612777" duration="29000" />
       <workItem from="1725459755756" duration="536000" />
-      <workItem from="1725460317680" duration="6685000" />
+      <workItem from="1725460317680" duration="8138000" />
     </task>
     <servers />
   </component>
